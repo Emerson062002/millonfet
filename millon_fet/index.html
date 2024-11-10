@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millon Fet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de inicio -->
+    <div id="start-screen">
+        <h1>Millon Fet</h1>
+        <button id="start-button">Iniciar Juego</button>
+    </div>
+
+    <!-- Pantalla del juego -->
+    <div id="game-container">
+        <div class="question-container">
+            <h2 id="question">¿Cuál es la capital de Francia?</h2>
+            <div class="answers-container">
+                <button class="answer-btn" id="answer1">París</button>
+                <button class="answer-btn" id="answer2">Londres</button>
+                <button class="answer-btn" id="answer3">Madrid</button>
+                <button class="answer-btn" id="answer4">Roma</button>
+            </div>
+        </div>
+
+        <div id="message"></div>
+
+        <div id="score"> $ 0</div> <!-- Aquí se muestra el signo de dólar -->
+        
+        <div id="timer">
+            <span id="timer-icon">⏰</span> Tiempo: 40
+        </div>
+    </div>
+
+    <!-- Pantalla de reinicio -->
+    <div id="restart-screen">
+        <h2>¡Perdiste!</h2>
+        <button id="restart-button">Volver a Intentarlo</button>
+    </div>
+
+    <!-- Iconos de ayuda -->
+    <div class="help-icons">
+        <button class="help-btn" id="phone-help">📱</button>
+        <button class="help-btn" id="audience-help">👥</button>
+        <button class="help-btn" id="fifty-fifty">50/50</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
